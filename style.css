@@ -19,13 +19,17 @@ body{
     border-radius: 5px;
 }
 
-.screen{
+#screen{
     background-color: darkgrey;
     width: 280px;
     height: 60px;
     border: solid black 10px;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 55px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 button{
@@ -74,7 +78,4 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.zero{
-    translate: -99px;
 }

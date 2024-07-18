@@ -8,28 +8,29 @@
 </head>
 <body>
     <div class="container">
-        <div class="screen">73*47</div>
+        <div id="screen"></div>
         <div class="buttons">
             <div class="operators">
-                <button>+</button>
-                <button>-</button>
-                <button>x</button>
-                <button>/</button>
+                <button onclick="fill(this.textContent)" >+</button>
+                <button onclick="fill(this.textContent)">-</button>
+                <button onclick="fill(this.textContent)">x</button>
+                <button onclick="fill(this.textContent)">/</button>
             </div>
-            <button class="clear">CLR</button>
+            <button class="clear" onclick="Clear()">CLR</button>
         </div>
         <div class="keys">
-            <div class="key">9</div>
-            <div class="key">8</div>
-            <div class="key">7</div>
-            <div class="key">6</div>
-            <div class="key">5</div>
-            <div class="key">4</div>
-            <div class="key">3</div>
-            <div class="key">2</div>
-            <div class="key">1</div>
-            <div class="key">=</div>
-            <div class="key zero">0</div>
+            <div class="key" onclick="fill(this.textContent)">9</div>
+            <div class="key" onclick="fill(this.textContent)">8</div>
+            <div class="key" onclick="fill(this.textContent)">7</div>
+            <div class="key" onclick="fill(this.textContent)">6</div>
+            <div class="key" onclick="fill(this.textContent)">5</div>
+            <div class="key" onclick="fill(this.textContent)">4</div>
+            <div class="key" onclick="fill(this.textContent)">3</div>
+            <div class="key" onclick="fill(this.textContent)">2</div>
+            <div class="key" onclick="fill(this.textContent)">1</div>
+            <div class="key" onclick="equate()">=</div>
+            <div class="key" onclick="fill(this.textContent)">.</div>
+            <div class="key" onclick="fill(this.textContent)">0</div>
         </div>
     </div>
     
