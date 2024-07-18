@@ -66,3 +66,19 @@ function Clear(){
     second = '';
     operatorIn = false;
 }
+
+function Delete(){
+    let deleted = output.textContent.slice(-1);
+    output.textContent = output.textContent.slice(0,-1);
+    if (["+","-","x","/"].includes(deleted)){
+        operator = '';
+        operatorIn = false;
+    }
+    else if(operatorIn){
+        second = second.slice(0,-1);
+    }
+    else{
+        first = first.slice(0,-1);
+    }
+
+}

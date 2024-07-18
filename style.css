@@ -6,6 +6,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 800px;
 }
 
 .container{
@@ -24,6 +25,7 @@ body{
     width: 280px;
     height: 60px;
     border: solid black 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -52,9 +54,17 @@ button{
     display: flex;
     flex-wrap: wrap;
 }
+.others{
+    display: flex;
+    flex-direction: column;
+}
 .clear{
     width: 110px;
-    height: 80px;
+    height: 40px;
+}
+.delete{
+    width: 110px;
+    height: 40px;
 }
 
 .keys{
