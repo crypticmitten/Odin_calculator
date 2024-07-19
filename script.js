@@ -52,11 +52,23 @@ function equate(){
     if(!operatorIn || !second){
         return
     }
+    if(Number(second) == 0 && operator=="divide"){
+        zeroError()
+        return
+    }
     output.textContent = parseFloat(window[operator](first,second).toFixed(3));
     first = output.textContent
     operator = '';
     second = '';
     operatorIn = false;
+}
+
+const zeroError = async () => {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    setTimeout(() => {
+        popup.classList.toggle("show");
+    }, "5000");
 }
 
 function Clear(){
